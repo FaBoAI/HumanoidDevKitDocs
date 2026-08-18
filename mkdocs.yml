@@ -1,0 +1,50 @@
+site_name: FaBo HumanoidDevKit Docs
+theme:
+    name: material
+    custom_dir: 'theme'
+    language: 'ja'
+    palette:
+      primary: 'yellow'
+      accent: 'black'
+    logo: 'logo.png'
+    favicon: 'favicon.png'
+extra:
+    search:
+        language: 'jp'
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: false
+      pygments_style: monokai
+      linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.keys
+  - attr_list
+nav:
+  - Home: "index.md"
+  - Cable: "cable.md"
+  - Hand: 
+    - Hand部品BOM: "hand/hand_bom.md"
+    - Hand組立: "hand/hand_build.md" 
+  - Wrist:
+    - Wrist部品BOM: "wrist/wrist_bom.md"
+    - Wrist組立: "wrist/wrist_build.md"    
+extra_css:
+#  - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+#  - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+#  - "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"
+  - "css/version-select.css"
+  - "css/custom.css"
+  - "stylesheets/lerobot_ports.css"
+extra_javascript:
+  - javascripts/version-select.js
+  - javascripts/extra.js
+  - javascripts/lerobot_ports.js
+plugins:
+  - macros
+  - mkdocs-video:
+      include_video_css: true
